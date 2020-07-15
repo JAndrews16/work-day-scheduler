@@ -4,13 +4,36 @@ body {
   line-height: 1;
 }
 
-textarea{
+h3 {
+  text-align: center;
+}
+
+textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+footer {
+  font-size: 7px;
+  text-align: left;
+  padding-top: 200px;
+}
+
+img {
+  padding: 15px;
+}
+
+.hoursTitle {
+  text-align: right;
+}
+
+.hours {
+  text-align: right;
+  font-size: 20px;
 }
 
 .jumbotron {
