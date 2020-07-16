@@ -1,4 +1,4 @@
-//Defined Variables
+
 let dateHeader = $("#currentDay").text(moment().format('dddd, MMMM Do YYYY'));
 let textAreaId = ["8", "9", "10", "11", "12", "13", "14", "15", "16", "17"];
 let today = moment().format("MMM Do YY");
@@ -29,7 +29,6 @@ function updateSchedule() {
         
         textArea.text(localStorage.getItem(`taskHr${textAreaId[j]}`));
 
-        //Compare the hour in the time block to the current hour and highlight accordingly
         if (hour < currentHour) {
             textArea.addClass("past");
 
@@ -44,7 +43,6 @@ function updateSchedule() {
 
 updateSchedule();
 
-//Function to save the text input using local storage
 function saveTask() {
     let btnName = $(this).attr("name");
     let taskTxt = $(`#${btnName}`).val();
@@ -52,5 +50,4 @@ function saveTask() {
     localStorage.setItem(`taskHr${btnName}`, taskTxt);
 }
 
-//When a save button is clicked, run the saveTask() function
 $(document).on('click', '.saveBtn', saveTask);
