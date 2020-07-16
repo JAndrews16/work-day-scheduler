@@ -18,3 +18,9 @@ The following animation demonstrates the application functionality:
 
 ## Application Photos
 
+Below is the application when first opened by the user. Note that the color coding will depend on what the current time is.
+![New Day](./Assets/Images/newDay.PNG)
+
+Below shows the page with a few tasks entered:
+![Tasks Entered](./Assets/Images/Tasks.PNG)
+
